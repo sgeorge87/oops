@@ -1,0 +1,1184 @@
+* Characters
+** Delores
+*** Description
+**** Gnome
+**** Male
+**** Age 53
+**** Tattooed Fey Sorcerer
+**** Chaotic Good
+**** 37 lbs.
+**** 3 ft. 3 in.
+**** Vermillion Hair
+**** Chestnut Skin
+**** Story
+***** Age 0  : Born in the hinterlands of KINGDOM to Pabst(m) and Chessex(f)
+***** Age 0  : Was not a planned pregancy
+***** Age 0  : Chessex suffers from Schizophrenia, is unemployed, but has past experiance as an alchemist
+***** Age 0  : Pabst works in a distillery, is in charge of maintaining the industrial stills
+***** Age 0  : Is alergic to cats and yak milk
+***** Age 0  : The house cat is butchered, made into soup
+***** Age 1  : Is left handed
+***** Age 3  : Ruffians steal the family goat, this is his earliest memory
+***** Age 3  : Family takes him to corpses hanging in a gibbet a few weeks later
+***** Age 3  : Learns to speak, has a lisp
+***** Age 4  : Becomes obsessed with rabbits, as he shys away from other children because he is self consious of his lisp
+***** Age 5  : Chessex tells him stories of gnomish heroism in the face of other races, instils in him the nobleness of illusions to bring levity to life
+***** Age 6  : Goes through a phase where everything is "Danddy"
+***** Age 6  : Dreams of becoming a pirate, trains a rabbit to ride on his shoulder
+***** Age 6  : Learns to read
+***** Age 7  : The bank threatens to foreclose on the family house
+***** Age 8  : Chessex finds "work" as a "trapper" (is a drug mule)
+***** Age 9  : A distillery fire / the death of Pabst
+***** Age 12 : Chessex defaults on the family hovel
+***** Age 12 : Chessex and Delores migrate to a farming village outside CAPITAL CITY
+***** Age 16 : Starts going to library to read books randomly pulled off the shelves, this is the closest he gets to a formal education
+***** Age 16 : Develops an obsession with books
+***** Age 16 : Begins the long term project of becoming able to speak with burrowing creatures
+***** Age 16 : Chessex is arrested for refining opium, not heard from again
+***** Age 17 : Settles in the urban slums
+***** Age 17 : Panhandles, uses illusions to create scenes to amuse children.
+***** Age 17 : Is bitten by dog, contracts severe infection
+***** Age 17 : Develops a phobia of becomeing a wereanimal
+***** Age 18 : Wanders the countryside, earns a living serving legal papers
+***** Age 18 : Is thrown out of a human farming village, develops a distrust against anyone over four foot.
+***** Age 19 : Travels with a trade caravan, provides services scaring away wayward herds of farm animals along the road
+***** Age 19 : Falls in love with Winona, a Gnome Aasimar also traveling with the caravan
+***** Age 19 : Winona can not understand his lisp, rejects him
+***** Age 19 : Develops a fixation on learning languages
+***** Age 24 : Completes the long term project of becoming able to speak with burrowing creatures
+***** Age 32 : Becomes obsessed with coffee
+***** Age 33 : Aspires to found the Order Of The Bean coffee fan club
+***** Age 33 : Is arrested for supposed tax evasion, is now destitute
+***** Age 33 : Becomes an Anarco-Capitalist
+***** Age 34 : Becomes obsessed with overthrowing the LOCAL GOVERNMENT
+***** Age 38 : Recognizes his life's goal is to receive accolades from a deity for coffee brewing
+***** Age 39 : Briefly finds work as a rigger on a trade ship, discovers he has a fear of deep sea
+***** Age 40 : Starts have nightmares revolving around deep bodys of water
+***** Age 41 : Is now terrified of any body of water he can't see the bottom of
+***** Age 42 : Meets Hutchinson
+***** Age 42 : Watches Hutchinson slay a moth in single combat
+***** Age 43 : Recognizes Hutchinson as a martial master
+***** Age 44 : Wanders the countryside with Hutchinson
+***** Age 44 : Hutchinson builds a burrow
+***** Age 44 : Wanderings cease
+***** Age 45 : Hutchinson sires kits
+***** Age 46 : Renews wandering, alone
+***** Age 47 : Joins up with The Sons of Hosiery, a traveling acting troup, and provides stage effects
+***** Age 47 : Learns of Hutchinson's death due to old age
+***** Age 48 : Begins the long term project of instilling Hutchinson as a minor deity in folklore
+***** Age 51 : Gains a giant rabbit tattoo familiar
+***** Age 52 : The Sons of Hosiery fold
+***** Age 53 : Moves back to CAPITAL CITY, fails to set up shop as a coffee merchant
+***** Age 53 : Begins the long term project of organizing rabbits into a society
+*** Languages
+    +2 Language for each rank in linguistics, +2 initial from INT Mod
+**** Common
+**** Gnome
+**** Sylvan
+**** Aklo
+**** Undercommon
+**** Necril
+**** Giant
+**** Draconic
+**** Dwarven
+**** Elven
+**** Halfling
+**** Orc
+**** Celestial
+**** Abyssal
+**** Sphinx
+*** Levels
+#+TBLNAME: LEVEL
+| Sorceror | 5 |
+*** Ability Scores
+#+TBLNAME: ABILITY
+|   | Ability | Base | Mod | Delta | T. Score | T. Mod |
+|---+---------+------+-----+-------+----------+--------|
+| # | STR     |    5 | -3  |       |        5 |     -3 |
+| # | DEX     |   14 | 2   |       |       14 |      2 |
+| # | CON     |   12 | 1   |       |       12 |      1 |
+| # | INT     |   14 | 2   |       |       14 |      2 |
+| # | WIS     |   12 | 1   |       |       12 |      1 |
+| # | CHA     |   21 | 5   |     2 |       23 |      6 |
+#+TBLFM: $4=if($3,($3-10)\2, string(""))::$6=if($5,$3+$5, $3)::$7=if($6,($6-10)\2,string(""))
+*** HP
+#+TBLNAME: HP
+|   | Hit Dice | CON | Total | Non Lethal |
+|---+----------+-----+-------+------------|
+| # |       18 |   5 |    23 |         4  |
+#+TBLFM: $3=remote(LEVEL,@1$2)*remote(ABILITY,@4$7)::$4=$2+$3::@2$2=6+5+4+1+2
+*** AC
+|   | Kind     | Base | Arm | Shl | DEX | Enhc | Defl | Nat | Dodge | Size | Total |
+|---+----------+------+-----+-----+-----+------+------+-----+-------+------+-------|
+| # | Normal   |   10 |     |     |   2 |      |      |     |       |    1 |    13 |
+| # | Touch    |   10 |     |     |   2 |      |      |     |       |    1 |    13 |
+| # | FlatFoot |   10 |     |     |   0 |      |      |     |       |    1 |    11 |
+#+TBLFM: $6=remote(ABILITY,@3$7)::$12=vsum($3..$11)::@4$6=0
+*** CMD
+|   | Kind        | Base | BAB | STR | DEX | Size | Misc | Total |
+|---+-------------+------+-----+-----+-----+------+------+-------|
+| # | Regular     |   10 |   2 |  -3 |   2 |   -1 |      |    10 |
+| # | Flat Footed |   10 |   2 |  -3 |   0 |   -1 |      |     8 |
+#+TBLFM: $4=remote(BAB,@1$2)::$5=remote(ABILITY,@2$7)::$6=remote(ABILITY,@3$7)::$9=vsum($3..$8)::@3$6=0
+*** BAB
+#+TBLNAME: BAB
+| Base Attack Bonus | 2 |
+*** Attack Bonuses
+#+TBLNAME: AB
+|   | Kind            | BAB | Ability | Size | Misc | Total |
+|---+-----------------+-----+---------+------+------+-------|
+| # | Melee           |   2 |      -3 |    1 |      |     0 |
+| # | Combat Maneuver |   2 |      -3 |  - 1 |      |    -2 |
+| # | Ranged          |   2 |       2 |    1 |      |     5 |
+#+TBLFM: $3=remote(BAB,@1$2)::$7=vsum($3..$6)::@2$4=remote(ABILITY,@2$7)::@3$4=remote(ABILITY,@2$7)::@4$4=remote(ABILITY,@3$7)
+*** Spells
+Illusion and Bloodline Spells at +1 caster level due to [[Mage's Tattoo][Mage's Tattoo]].
+| Level | Spells Per Day | Today |
+|-------+----------------+-------|
+|     1 |              8 |   3   |
+|     2 |              6 |   3   |
+**** Cantrips
+***** [[Haunted Fey Aspect][Haunted Fey Aspect]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           0 |       6 |     1 |           1 |       18 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Detect Magic][Detect Magic]]
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           0 |       6 |       16 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+***** [[Read Magic][Read Magic]]
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           0 |       6 |       16 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+***** [[Mage Hand][Mage Hand]]
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           0 |       6 |       16 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+***** [[Ghost Sound][Ghost Sound]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           0 |       6 |     1 |           1 |       18 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Prestidigitation][Prestidigitation]]
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           0 |       6 |       16 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+**** First Level
+***** [[Entangle][Entangle]] (Bloodline)
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           1 |       6 |       17 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+***** [[Color Spray][Color Spray]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           1 |       6 |     1 |           1 |       19 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Silent Image][Silent Image]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           1 |       6 |     1 |           1 |       19 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Disguise Self][Disguise Self]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           1 |       6 |     1 |           1 |       19 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Charm Person][Charm Person]]
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           1 |       6 |       17 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+***** [[Sleep][Sleep]]
+|   | Base DC | Spell Level | CHA Mod | Arcana | Total DC |
+|---+---------+-------------+---------+--------+----------|
+| # |      10 |           1 |       6 |      2 |       19 |
+#+TBLFM: $6=vsum($2..$5)::@2$4=remote(ABILITY,@7$7)
+***** [[Grease][Grease]]
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           1 |       6 |       17 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+**** Second Level
+***** [[Hideous Laughter][Hideous Laughter]] (Bloodline)
+|   | Base DC | Spell Level | CHA Mod | Arcana | Total DC |
+|---+---------+-------------+---------+--------+----------|
+| # |      10 |           2 |       6 |      2 |       20 |
+#+TBLFM: $6=vsum($2..$5)::@2$4=remote(ABILITY,@7$7)
+***** [[Minor Image][Minor Image]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           2 |       6 |     1 |           1 |       20 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Invisibility][Invisibility]] (Illusion)
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           2 |       6 |     1 |           1 |       20 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+**** Spell Like Abilities
+***** [[Dancing Lights][Dancing Lights]] - 1/day
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           0 |       6 |     1 |           1 |       18 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Ghost Sound][Ghost Sound]] - 4/day
+|   | Base DC | Spell Level | CHA Mod | Focus | Gnome Magic | Total DC |
+|---+---------+-------------+---------+-------+-------------+----------|
+| # |      10 |           0 |       6 |     1 |           1 |       18 |
+#+TBLFM: $7=vsum($2..$6)::@2$4=remote(ABILITY,@7$7)
+***** [[Prestidigitation][Prestidigitation]] - 1/day
+|   | Base DC | Spell Level | CHA Mod | Total DC |
+|---+---------+-------------+---------+----------|
+| # |      10 |           0 |       6 |       16 |
+#+TBLFM: $5=vsum($2..$4)::@2$4=remote(ABILITY,@7$7)
+***** [[Speak With Animals][Speak With Animals]] - 1/day
+*** Saves
+|   | Kind                       | Base | Ability | Total |
+|---+----------------------------+------+---------+-------|
+| # | Foritude                   |    1 |       1 |     2 |
+| # | Reflex                     |    1 |       2 |     3 |
+| # | Will (+1 if animal nearby) |    4 |       1 |     5 |
+#+TBLFM: $5=vsum($3..$4)::@2$4=remote(ABILITY,@4$7)::@3$4=remote(ABILITY,@3$7)::@4$4=remote(ABILITY,@6$7)
+*** Init
+|   | Dex | Misc | Total |
+| # | 2   |    2 |     4 |
+#+TBLFM: $2=remote(ABILITY,@3$7)::$4=vsum($2..$3)
+*** Attacks
+**** Unarmed
+|   | TAB | DMG | DMG MOD | CRIT | TYPE |
+|---+-----+-----+---------+------+------|
+| # | 0   | 1d2 |      -3 | x2   | B    |
+#+TBLFM: $2=remote(AB,@2$7)::$4=remote(ABILITY,@2$7)
+*** Skills
+| # | SKill Ranks Per Level | 4 |
+#+TBLFM: $3=2+remote(ABILITY,@5$7)
+Misc Bonuses: +1 Bluff (Gift of Tongues); +1 Diplomacy (Gift of Tongues); +2 Diplomacy (Familiar); +2 Knowledge [Arcana] (Academecian); +2 Perception (Keen Senses); +4 Stealth (Size)
+#+TBLNAME: SKILL
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Acrobatics                | Dex     |     |        |      2 |      |      |     2 |
+| # | Appraise                  | Int     | y   |      3 |      2 |    1 |      |     6 |
+| # | Bluff                     | Cha     | y   |      3 |      6 |    5 | 1    |    15 |
+| # | Climb                     | Str     |     |        |     -3 |      |      |    -3 |
+| # | Craft                     | Int     | y   |        |      2 |      |      |     2 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Diplomacy                 | Cha     |     |        |      6 |    5 | 3    |    14 |
+| # | Disable Device            | Dex     |     |        |      2 |      |      |     2 |
+| # | Disguise                  | Cha     |     |        |      6 |      |      |     6 |
+| # | Escape Artist             | Dex     |     |        |      2 |      |      |     2 |
+| # | Fly                       | Dex     | y   |        |      2 |      |      |     2 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Handle Animal             | Cha     | y   |      3 |      6 |    1 |      |    10 |
+| # | Heal                      | Wis     |     |        |      1 |      |      |     1 |
+| # | Intimidate                | Cha     | y   |        |      6 |      |      |     6 |
+| # | Knowledge [Arcana]        | Int     | y   |        |      2 |      | 2    |     4 |
+| # | Knowledge [Dungeoneering] | Int     |     |        |      2 |      |      |     2 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Knowledge [Engineering]   | Int     |     |        |      2 |      |      |     2 |
+| # | Knowledge [Geography]     | Int     |     |        |      2 |      |      |     2 |
+| # | Knowledge [History]       | Int     |     |        |      2 |      |      |     2 |
+| # | Knowledge [Local]         | Int     |     |        |      2 |      |      |     2 |
+| # | Knowledge [Nature]        | Int     | y   |      3 |      2 |    1 |      |     6 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Knowledge [Nobility]      | Int     |     |        |      2 |      |      |     2 |
+| # | Knowledge [Planes]        | Int     |     |        |      2 |      |      |     2 |
+| # | Knowledge [Religion]      | Int     |     |        |      2 |      |      |     2 |
+| # | Linguistics               | Int     |     |        |      2 |    5 |      |     7 |
+| # | Perception                | Wis     |     |        |      1 |      | 2    |     3 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Perform                   | Cha     |     |        |      6 |      |      |     6 |
+| # | Profession                | Wis     | y   |        |      1 |      |      |     1 |
+| # | Ride                      | Dex     |     |        |      2 |      |      |     2 |
+| # | Sense Motive              | Wis     |     |        |      1 |      |      |     1 |
+| # | Slight of Hand            | Dex     | y   |      3 |      2 |    1 |      |     6 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Spellcraft                | Int     | y   |      3 |      2 |    5 |      |    10 |
+| # | Stealth                   | Dex     |     |        |      2 |      | 4    |     6 |
+| # | Survival                  | Wis     |     |        |      1 |      |      |     1 |
+| # | Swim                      | Str     |     |        |     -3 |      |      |    -3 |
+| # | Use Magic Device          | Cha     | y   |      3 |      6 |    1 |      |    10 |
+#+TBLFM: $9=vsum($5..$8)::@2$6=remote(ABILITY,@3$7)::@3$6=remote(ABILITY,@5$7)::@4$6=remote(ABILITY,@7$7)::@5$6=remote(ABILITY,@2$7)::@6$6=remote(ABILITY,@5$7)::@8$6=remote(ABILITY,@7$7)::@9$6=remote(ABILITY,@3$7)::@10$6=remote(ABILITY,@7$7)::@11$6=remote(ABILITY,@3$7)::@12$6=remote(ABILITY,@3$7)::@14$6=remote(ABILITY,@7$7)::@15$6=remote(ABILITY,@6$7)::@16$6=remote(ABILITY,@7$7)::@17$6=remote(ABILITY,@5$7)::@18$6=remote(ABILITY,@5$7)::@20$6=remote(ABILITY,@5$7)::@21$6=remote(ABILITY,@5$7)::@22$6=remote(ABILITY,@5$7)::@23$6=remote(ABILITY,@5$7)::@24$6=remote(ABILITY,@5$7)::@26$6=remote(ABILITY,@5$7)::@27$6=remote(ABILITY,@5$7)::@28$6=remote(ABILITY,@5$7)::@29$6=remote(ABILITY,@5$7)::@30$6=remote(ABILITY,@6$7)::@32$6=remote(ABILITY,@7$7)::@33$6=remote(ABILITY,@6$7)::@34$6=remote(ABILITY,@3$7)::@35$6=remote(ABILITY,@6$7)::@36$6=remote(ABILITY,@3$7)::@38$6=remote(ABILITY,@5$7)::@39$6=remote(ABILITY,@3$7)::@40$6=remote(ABILITY,@6$7)::@41$6=remote(ABILITY,@2$7)::@42$6=remote(ABILITY,@7$7)
+*** Carrying Capacity
+|   | Load       | Limit |
+|---+------------+-------|
+|   | Light      |    16 |
+|   | Medium     |    33 |
+|   | Heavy      |    50 |
+| # | Over Head  |    50 |
+| # | Off Ground |   100 |
+| # | Drag       |   250 |
+#+TBLFM: @5$3=@4$3::@6$3=@4$3*2::@7$3=@4$3*5
+*** Inventory
+#+TBLNAME: INVENTORY
+Light load = 16
+| #                                         |  Total Weight | 14.375 |
+|-------------------------------------------+---------------+--------|
+| Item                                      |          Slot | Weight |
+|-------------------------------------------+---------------+--------|
+| Gold (1646)                               |               |        |
+| [[Ring of Spell Knowledge][Ring of Spell Knowledge, I]] - Grease       |          Ring |      0 |
+| [[Ring of Spell Knowledge][Ring of Spell Knowledge, I]] - Charm Person |          Ring |      0 |
+| Headband of Cha +2                        |      Headband |      1 |
+| [[Cap of Light][Cap of Light]]                              |          Head |      0 |
+| [[Sleeves of Many Garments][Sleeves of Many Garments]]                  |        Wrists |      1 |
+| [[Dilettante's Outfit][Dilettante's Outfit]]                       |               |      8 |
+| Compass                                   |               |      0 |
+| Mirror                                    |               |    1/2 |
+| Sack                                      |               |    1/2 |
+| Flint and Steel                           |               |      0 |
+| Belt Pouch                                |               |    1/4 |
+| Spell Component Pouch                     |               |    1/8 |
+|-------------------------------------------+---------------+--------|
+| Bag of Holding, Minor                     | Weight in Bag |      3 |
+|-------------------------------------------+---------------+--------|
+| Rope (Silk)                               |             5 |      0 |
+| [[Clamor Box][Clamor Box]]                                |             2 |      0 |
+| [[Traveler's Any-Tool][Traveler's Any-Tool]]                       |             2 |      0 |
+| [[Bloodbrush Extract][Bloodbrush Extract]] (8)                    |             0 |      0 |
+| Journal                                   |             1 |      0 |
+| Ink                                       |             0 |      0 |
+| [[Glue Paper][Glue Paper]] (10)                           |             0 |      0 |
+| Paper (10)                                |             0 |      0 |
+| Pen                                       |             0 |      0 |
+| Blanket                                   |             3 |      0 |
+| Bedroll                                   |             5 |      0 |
+| Mess Kit                                  |             1 |      0 |
+| Soap                                      |           1/2 |      0 |
+| Coffee Pot                                |             4 |      0 |
+#+TBLFM: @<$3=vsum(@3$3..@>$3)
+*** Feats
+**** [[Woodland Stride][Woodland Stride]]
+**** [[Craft Wondrous Item][Craft Wondrus Item]]
+**** [[Effortless Trickery][Effortless Trickery]]
+**** [[Familiar Tattoo][Familiar Tattoo]] - [[Winston][Winston]]
+**** [[Bloodline Arcana][Bloodline Arcana]]
+**** [[Groundling][Groundling]]
+**** [[Mage's Tattoo - Ex][Mage's Tattoo - Ex]] - Illusion
+**** [[Spell Focus][Spell Focus]] - Illusion
+**** [[Bloodline Tattoos][Bloodline Tattoos]]
+*** Traits
+**** Character
+***** [[Reactionary][Reactionary]]
+***** [[Animal Friend][Animal Friend]]
+**** Racial
+***** [[Illusion Resistance][Illusion Resistance]] 
+***** [[Keen Senses][Keen Senses]]
+***** [[Academician][Academician]] 
+***** [[Gnome Magic][Gnome Magic]] 
+***** [[Gnome Weapon Familiarity][Gnome Weapon Familiarity]]
+***** [[Low-Light Vision][Low-Light Vision]]
+***** [[Gift of Tongues][Gift of Tongues]]
+** Winston
+*** Description
+**** [[Giant Rabbit][Giant Rabbit]]
+**** Male
+**** Age 2
+**** 24 lbs.
+**** 2 ft. 6 in. (length)
+**** Dark Brown eyes
+**** Sandy colored fur
+*** Ability Scores
+#+TBLNAME: RABILITY
+|   | Ability | Base | Mod | Delta | T. Score | T. Mod |
+|---+---------+------+-----+-------+----------+--------|
+| # | STR     |    3 | -4  |       | 3        | -4     |
+| # | DEX     |   16 | 3   |       | 16       | 3      |
+| # | CON     |    8 | -1  |       | 8        | -1     |
+| # | INT     |    8 | -1  |       | 8        | -1     |
+| # | WIS     |   12 | 1   |       | 12       | 1      |
+| # | CHA     |    6 | -2  |       | 6        | -2     |
+#+TBLFM: $4=if($3,($3-10)\2, string(""))::$6=if($5,$3+$5, $3)::$7=if($6,($6-10)\2,string(""))
+*** HP
+|   | HP | Non leathal damnage | Dmg |
+|---+----+---------------------+-----|
+| # | 11 |                   1 |  4  |
+| # |    |                     |     |
+#+TBLFM: $2=remote(HP,@2$4)\2
+*** AC
+|   | Kind     | Base | Arm | Shl | DEX | Enhc | Defl | Nat | Dodge | Size | Total |
+|---+----------+------+-----+-----+-----+------+------+-----+-------+------+-------|
+| # | Normal   |   10 |     |     |   3 |      |      |   3 |       |    1 |    17 |
+| # | Touch    |   10 |     |     |   3 |      |      |   3 |       |    1 |    17 |
+| # | FlatFoot |   10 |     |     |   0 |      |      |   3 |       |    1 |    14 |
+#+TBLFM: $6=remote(RABILITY,@3$7)::$12=vsum($3..$11)::@4$6=0
+*** BAB
+#+TBLNAME: RBAB
+| # | Base Attack Bonus | 2 |
+#+TBLFM: $3=remote(BAB,@1$2)
+*** CMD
+|   | Kind        | Base | BAB | STR | DEX | Size | Misc | Total |
+|---+-------------+------+-----+-----+-----+------+------+-------|
+| # | Regular     |   10 |   2 |  -4 |   3 |   -1 |      |    10 |
+| # | Flat Footed |   10 |   2 |  -4 |   0 |   -1 |      |     7 |
+#+TBLFM: $4=remote(RBAB,@1$3)::$5=remote(RABILITY,@2$7)::$6=remote(RABILITY,@3$7)::$9=vsum($3..$8)::@3$6=0
+*** Attack Bonuses
+#+TBLNAME: RAB
+|   | Kind            | BAB | Ability | Size | Misc | Total |
+|---+-----------------+-----+---------+------+------+-------|
+| # | Melee           |   2 |      -4 |    1 |      |    -1 |
+| # | Combat Maneuver |   2 |      -4 |  - 1 |      |    -3 |
+| # | Ranged          |   2 |       3 |    1 |      |     6 |
+#+TBLFM: $3=remote(RBAB,@1$3)::$7=vsum($3..$6)::@2$4=remote(RABILITY,@2$7)::@3$4=remote(RABILITY,@2$7)::@4$4=remote(RABILITY,@3$7)
+*** Init
+|   | Dex | Misc | Total |
+|---+-----+------+-------|
+| # | 3   |    0 |     3 |
+#+TBLFM: $2=remote(RABILITY,@3$7)::$4=vsum($2..$3)
+*** Saves
+|   | Kind     | Base | Ability | Total |
+|---+----------+------+---------+-------|
+| # | Foritude |    2 |      -1 |     1 |
+| # | Reflex   |    2 |       3 |     5 |
+| # | Will     |    4 |       1 |     5 |
+#+TBLFM: $5=vsum($3..$4)::@2$4=remote(RABILITY,@4$7)::@3$4=remote(RABILITY,@3$7)::@4$4=remote(RABILITY,@6$7)
+*** Skills
+| # | SKill Ranks Per Level | 4 |
+Favored Class Ranks : 5
+Misc Bonuses: +10 Acrobatics when jumping (Racial), +1 Perception (Racial), +2 Perception (Alertness), +2 Sense Motive (Alertness)
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Acrobatics                | Dex     | y   |        |      3 |    0 |      |     3 |
+| # | Appraise                  | Int     |     |        |     -1 |    1 |      |     0 |
+| # | Bluff                     | Cha     |     |        |     -2 |    5 |      |     3 |
+| # | Climb                     | Str     | y   |        |     -4 |    0 |      |    -4 |
+| # | Craft                     | Int     |     |        |     -1 |    0 |      |    -1 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Diplomacy                 | Cha     |     |        |     -2 |    5 |      |     3 |
+| # | Disable Device            | Dex     |     |        |      3 |    0 |      |     3 |
+| # | Disguise                  | Cha     |     |        |     -2 |    0 |      |    -2 |
+| # | Escape Artist             | Dex     |     |        |      3 |    0 |      |     3 |
+| # | Fly                       | Dex     | y   |        |      3 |    0 |      |     3 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Handle Animal             | Cha     |     |        |     -2 |    1 |      |    -1 |
+| # | Heal                      | Wis     |     |        |      1 |    0 |      |     1 |
+| # | Intimidate                | Cha     |     |        |     -2 |    0 |      |    -2 |
+| # | Knowledge [Arcana]        | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [Dungeoneering] | Int     |     |        |     -1 |    0 |      |    -1 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Knowledge [Engineering]   | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [Geography]     | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [History]       | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [Local]         | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [Nature]        | Int     |     |        |     -1 |    1 |      |     0 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Knowledge [Nobility]      | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [Planes]        | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Knowledge [Religion]      | Int     |     |        |     -1 |    0 |      |    -1 |
+| # | Linguistics               | Int     |     |        |     -1 |    5 |      |     4 |
+| # | Perception                | Wis     | y   |        |      1 |    0 | 3    |     4 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Perform                   | Cha     |     |        |     -2 |    0 |      |    -2 |
+| # | Profession                | Wis     |     |        |      1 |    0 |      |     1 |
+| # | Ride                      | Dex     |     |        |      3 |    0 |      |     3 |
+| # | Sense Motive              | Wis     |     |        |      1 |    0 | 2    |     3 |
+| # | Slight of Hand            | Dex     |     |        |      3 |    5 |      |     8 |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+|   | Skill Name                | Ability | CS? | CS Mod | Ab Mod | Rank | Misc | Total |
+|---+---------------------------+---------+-----+--------+--------+------+------+-------|
+| # | Spellcraft                | Int     |     |        |     -1 |    1 |      |     0 |
+| # | Stealth                   | Dex     | y   | 3      |      3 |    7 |      |    13 |
+| # | Survival                  | Wis     |     |        |      1 |    0 |      |     1 |
+| # | Swim                      | Str     | y   |        |     -4 |    0 |      |    -4 |
+| # | Use Magic Device          | Cha     |     |        |     -2 |    1 |      |    -1 |
+#+TBLFM: $7=remote(SKILL,$7)::$9=vsum($5..$8)::@2$6=remote(RABILITY,@3$7)::@3$6=remote(RABILITY,@5$7)::@4$6=remote(RABILITY,@7$7)::@5$6=remote(RABILITY,@2$7)::@6$6=remote(RABILITY,@5$7)::@8$6=remote(RABILITY,@7$7)::@9$6=remote(RABILITY,@3$7)::@10$6=remote(RABILITY,@7$7)::@11$6=remote(RABILITY,@3$7)::@12$6=remote(RABILITY,@3$7)::@14$6=remote(RABILITY,@7$7)::@15$6=remote(RABILITY,@6$7)::@16$6=remote(RABILITY,@7$7)::@17$6=remote(RABILITY,@5$7)::@18$6=remote(RABILITY,@5$7)::@20$6=remote(RABILITY,@5$7)::@21$6=remote(RABILITY,@5$7)::@22$6=remote(RABILITY,@5$7)::@23$6=remote(RABILITY,@5$7)::@24$6=remote(RABILITY,@5$7)::@26$6=remote(RABILITY,@5$7)::@27$6=remote(RABILITY,@5$7)::@28$6=remote(RABILITY,@5$7)::@29$6=remote(RABILITY,@5$7)::@30$6=remote(RABILITY,@6$7)::@32$6=remote(RABILITY,@7$7)::@33$6=remote(RABILITY,@6$7)::@34$6=remote(RABILITY,@3$7)::@35$6=remote(RABILITY,@6$7)::@36$6=remote(RABILITY,@3$7)::@38$6=remote(RABILITY,@5$7)::@39$6=remote(RABILITY,@3$7)::@40$6=remote(RABILITY,@6$7)::@41$6=remote(RABILITY,@2$7)::@42$6=remote(RABILITY,@7$7)
+*** Attacks
+**** Bite
+|   | TAB | DMG | DMG MOD | CRIT | TYPE  |
+|---+-----+-----+---------+------+-------|
+| # | -1  | 1d4 | -6.     | x2   | B,P,S |
+#+TBLFM: $2=remote(RAB,@2$7)::$4=remote(RABILITY,@2$7)*(1.5)
+*** Special
+**** [[Alertness][Alertness]]
+**** [[Improved Evasion][Improved Evasion]]
+**** [[Share Spells][Share Spells]]
+**** [[Empathic Link][Empathic Link]]
+**** [[Deliver Touch Spells][Deliver Touch Spells]]
+**** [[Speak with Master][Speak with Master]]
+**** [[Low-Light Vision][Low-Light Vision]]
+** Definitions
+*** Charm Person
+**** School
+School enchantment (charm) [mind-affecting]; Level bard 1, sorcerer/wizard 1, witch 1; Domains charm 1
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range close (25 ft. + 5 ft./2 levels)
+Target one humanoid creature
+Duration 1 hour/level
+Saving Throw Will negates; Spell Resistance yes
+**** Description
+This charm makes a humanoid creature regard you as its trusted friend and ally (treat the target's attitude as friendly). If the creature is currently being threatened or attacked by you or your allies, however, it receives a +5 bonus on its saving throw.
+The spell does not enable you to control the charmed person as if it were an automaton, but it perceives your words and actions in the most favorable way. You can try to give the subject orders, but you must win an opposed Charisma check to convince it to do anything it wouldn't ordinarily do. (Retries are not allowed.) An affected creature never obeys suicidal or obviously harmful orders, but it might be convinced that something very dangerous is worth doing. Any act by you or your apparent allies that threatens the charmed person breaks the spell. You must speak the person's language to communicate your commands, or else be good at pantomiming.
+*** Sow Thought
+**** School
+School enchantment (compulsion) [mind-affecting]; Level bard 1, sorcerer/wizard 1, witch 1
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range close (25 ft. + 5 ft./2 levels)
+Target one creature
+Duration permanent
+Saving Throw Will negates; Spell Resistance yes
+**** Description
+You plant an idea, concept, or suspicion in the mind of the subject. The target genuinely believes that the idea is his own, but is not required to act upon it. If the idea is contrary to the target's normal thoughts (such as making a paladin think "I should murder my friends" ) the target may suspect mind-altering magic is at play. The idea must be fairly clear, enough so that it can be conveyed in one or two sentences. You do not need to share a common language for the spell to succeed, but without a common language you can only sow the most basic rudimentary ideas.
+*** Glue Paper
+This 1-foot-square piece of paper is coated on one side with a weak glue or sticky material such as tree sap or even honey. It is stored folded in half. If you apply glue paper to a window before you break it, the broken pieces stick to the glue rather than noisily falling to the ground. Glue paper is good for a single use. 
+*** Grease
+**** School
+School conjuration (creation); Level bard 1, magus 1, sorcerer/wizard 1, summoner 1
+**** Casting
+Casting Time 1 standard action
+Components V, S, M (butter)
+**** Effect
+Range close (25 ft. + 5 ft./2 levels)
+Target one object or 10-ft. square
+Duration 1 min./level (D)
+Saving Throw see text; Spell Resistance no
+**** Description
+A grease spell covers a solid surface with a layer of slippery grease. Any creature in the area when the spell is cast must make a successful Reflex save or fall. A creature can walk within or through the area of grease at half normal speed with a DC 10 Acrobatics check. Failure means it can't move that round (and must then make a Reflex save or fall), while failure by 5 or more means it falls (see the Acrobatics skill for details). Creatures that do not move on their turn do not need to make this check and are not considered flat-footed.
+The spell can also be used to create a greasy coating on an item. Material objects not in use are always affected by this spell, while an object wielded or employed by a creature requires its bearer to make a Reflex saving throw to avoid the effect. If the initial saving throw fails, the creature immediately drops the item. A saving throw must be made in each round that the creature attempts to pick up or use the greased item. A creature wearing greased armor or clothing gains a +10 circumstance bonus on Escape Artist checks and combat maneuver checks made to escape a grapple, and to their CMD to avoid being grappled.
+*** Magic Item Creation
+To create magic items, spellcasters use special feats which allow them to invest time and money in an item's creation. At the end of this process, the spellcaster must make a single skill check (usually Spellcraft, but sometimes another skill) to finish the item. If an item type has multiple possible skills, you choose which skill to make the check with. The DC to create a magic item is 5 + the caster level for the item. Failing this check means that the item does not function and the materials and time are wasted. Failing this check by 5 or more results in a cursed item.
+Note that all items have prerequisites in their descriptions. These prerequisites must be met for the item to be created. Most of the time, they take the form of spells that must be known by the item's creator (although access through another magic item or spellcaster is allowed). The DC to create a magic item increases by 5 for each prerequisite the caster does not meet. The only exception to this is the requisite item creation feat, which is mandatory. In addition, you cannot create potions, spell-trigger, or spell-completion magic items without meeting its prerequisites.
+While item creation costs are handled in detail below, note that normally the two primary factors are the caster level of the creator and the level of the spell or spells put into the item. A creator can create an item at a lower caster level than her own, but never lower than the minimum level needed to cast the needed spell. Using metamagic feats, a caster can place spells in items at a higher level than normal.
+Magic supplies for items are always half of the base price in gp. For many items, the market price equals the base price. Armor, shields, weapons, and items with value independent of their magically enhanced properties add their item cost to the market price. The item cost does not influence the base price (which determines the cost of magic supplies), but it does increase the final market price.
+In addition, some items cast or replicate spells with costly material components. For these items, the market price equals the base price plus an extra price for the spell component costs. The cost to create these items is the magic supplies cost plus the costs for the components. Descriptions of these items include an entry that gives the total cost of creating the item.
+The creator also needs a fairly quiet, comfortable, and well-lit place in which to work. Any place suitable for preparing spells is suitable for making items. Creating an item requires 8 hours of work per 1,000 gp in the item's base price (or fraction thereof), with a minimum of at least 8 hours. Potions and scrolls are an exception to this rule; they can take as little as 2 hours to create (if their base price is 250 gp or less). Scrolls and potions whose base price is more than 250 gp, but less than 1,000 gp, take 8 hours to create, just like any other magic item. The character must spend the gold at the beginning of the construction process. Regardless of the time needed for construction, a caster can create no more than one magic item per day. This process can be accelerated to 4 hours of work per 1,000 gp in the item's base price (or fraction thereof) by increasing the DC to create the item by 5.
+The caster can work for up to 8 hours each day. He cannot rush the process by working longer each day, but the days need not be consecutive, and the caster can use the rest of his time as he sees fit. If the caster is out adventuring, he can devote 4 hours each day to item creation, although he nets only 2 hours' worth of work. This time is not spent in one continuous period, but rather during lunch, morning preparation, and during watches at night. If time is dedicated to creation, it must be spent in uninterrupted 4-hour blocks. This work is generally done in a controlled environment, where distractions are at a minimum, such as a laboratory or shrine. Work that is performed in a distracting or dangerous environment nets only half the amount of progress (just as with the adventuring caster).
+A character can work on only one item at a time. If a character starts work on a new item, all materials used on the under-construction item are wasted.
+*** Craft Wondrous Item
+You can create wondrous items, a type of magic item.
+Prerequisite: Caster level 3rd.
+Benefit: You can create a wide variety of magic wondrous items. Crafting a wondrous item takes 1 day for each 1,000 gp in its price. To create a wondrous item, you must use up raw materials costing half of its base price.
+You can also mend a broken wondrous item if it is one that you could make. Doing so costs half the raw materials and half the time it would take to craft that item.
+See [[Magic Item Creation][magic item creaton]] rules for more information.
+*** Addiction
+Anytime a character takes a drug he must make a saving throw, noted in the drug's description, to resist becoming addicted. If a character makes the save, he is not addicted and the effects of the drug persist as normal. If he fails the save, he contracts the noted form of addiction (see below). Should a character take multiple doses of the same drug in a short period of time addiction becomes more difficult to resist. The DC of a drug's saving throw increases by +2 every time a character takes a another dose of that drug while still suffering from ability damage caused by a previous dose. Keep track of how high this DC rises, even for characters already addicted to a drug, as it determines the DC necessary to overcome the disease.
+Addiction manifests in three different degrees of severity: minor, moderate, and severe. Each drug notes what type of addiction failing a save against it results in. Each addiction causes a persistent penalty to ability scores, lasting for as long as the character has the disease. In the case of moderate and severe addictions, the character also cannot naturally heal ability damage dealt by the drug that caused the addiction.
+Each form of addiction encourages sufferers to continue making use of the drug they are addicted to. While a character is benefiting from the effects of the drug he is addicted to, he does not suffer the penalties of his addiction disease. While he still receives the benefits of the drug and takes ability damage as normal, the disease's effects are mitigated. As soon as the drug's benefits expire, the disease's effects return.
+**** Minor Addiction
+Type disease, variable; Save variable
+Onset 1 day; Frequency 1/day
+Effect -2 penalty to Con; Cure 2 consecutive saves
+**** Moderate Addiction
+Type disease, variable; Save variable
+Onset 1 day; Frequency 1/day
+Effect -2 penalty to Con and Str, target cannot naturally heal ability damage caused by the drug that caused this addiction; Cure 3 consecutive saves
+**** Severe Addiction
+Type disease, variable; Save variable
+Onset 1 day; Frequency 1/day
+Effect -2 penalty to Dex, Con, Str, and Wis; target cannot naturally heal ability damage caused by the drug that caused this addiction; Cure 3 consecutive saves
+**** Curing Addiction
+As addictions are diseases, they can be cured as such, through the use of spells like remove disease or by succeeding at Fortitude saves over time. Unlike with other diseases, an addicted character can only make a Fortitude save to overcome his addiction after a day of not taking the drug he is addicted to. The DC of this Fortitude save is equal to the highest addiction DC his drug use has reached (not necessarily the DC that addicted him if he has continued to make use of the drug while addicted). This DC decreases by -2 for everyday the character does not make use of the drug, to a minimum of the drug's base addiction DC.
+Depending on the severity of the character's addiction, it might take two or three consecutive successful Fortitude saves to overcome the disease. Should a character take a dose of the drug he's addicted to, he immediately relapses, causing the addiction DC to instantly return to its highest DC and negating any successful past saves.
+*** Bloodbrush Extract
+Refined from the thorns of a blood-red brush, this extract numbs the senses and evokes vivid hallucinations, heightened awareness, and altered thought processes.
+Although repeated doses can be toxic, bloodbrush extract is not widely used as a poison but rather as a recreational drug.
+Type drug, ingested; [[Addiction][Addiction]] mild; Save Fortitude DC 14; Price 25 gp
+**** Effect
+2 hours; +2 on Knowledge (arcana, planes, or religion) and Spellcraft checks, victim is distracted for the purposes of Perception checks. Damage 1d2 Wis damage
+*** Dilettante's Outfit
+These clothes are favored by gnome inventors and wanderers, and consist of sturdy boots, a pair of stout linen pants or skirt, a cloth shirt, leather gloves, a hat and cloak, and numerous belts, straps, and accessories (such as scarves, a vest, bits of rope or twine, and bandoleers). These items are generally mismatched, each having been selected as "superior" from some other set of clothing, and are rife with pockets and small hidey-holes. It the wearer a +2 circumstance bonus on Sleight of Hand checks made to conceal a small object on her body.
+As this outfit does not cost 10 gp or less, player characters can not choose this outfit for free when first beginning play. 
+*** Ring of Spell Knowledge
+Aura moderate or strong (no school); CL 7th
+Slot ring; Price 1,500 gp (Type I), 6,000 gp (Type II), 13,500 gp (Type III), 24,000 gp (Type IV); Weight -- 
+**** Description
+This ring comes in four types: ring of spell knowledge I, ring of spell knowledge II, ring of spell knowledge III, and ring of spell knowledge IV. All of them are useful only to spontaneous arcane spellcasters.
+Through study, the wearer can gain the knowledge of a single spell in addition to those allotted by her class and level. A ring of spell knowledge I can hold 1st-level spells only, a ring of spell knowledge II 1st- or 2nd-level spells, a ring of spell knowledge III spells of 3rd level or lower, and a ring of spell knowledge IV up to 4th-level spells.
+A ring of spell knowledge is only a storage space; the wearer must still encounter a written, active, or cast version of the spell and succeed at a DC 20 Spellcraft check to teach the spell to the ring. Thereafter, the arcane spellcaster may cast the spell as though she knew the spell and it appeared on her class' spell list.
+Arcane spells that do not appear on the wearer's class list are treated as one level higher for all purposes (storage and casting).
+*** Traveler's Any-Tool
+Aura moderate transmutation; CL 9th; Weight 2 lbs.
+Slot none; Price 250 gp
+**** Description
+This implement at first seems to be nothing but a 12-inch iron bar lined with small plates and spikes. It can be folded, twisted, hinged, and bent, to form almost any known tool. Hammers, shovels, even a block and tackle (without rope) are possible. It can duplicate any tool the wielder can clearly visualize that contains only limited moving parts, such as a pair of scissors, but not a handloom. It cannot be used to replace missing or broken parts of machines or vehicles unless a mundane tool would have done the job just as well.
+The any-tool counts as a set of masterwork artisan's tools for most Craft or Profession skills (although very specialist crafts such as alchemy still require their own unique toolset). It is an ineffective weapon, always counting as an improvised weapon and never granting any masterwork bonus on attack rolls.
+*** Cap of Light
+Aura faint evocation; CL 1st
+Slot head; Price 900 gp; Weight --
+**** Description
+This small cloth skullcap resembles those some priests wear, but is topped with a small silver statue in the shape of a lit candle.
+The wearer can command the statue to radiate light (as [[Light][Light]]). The light can also be turned off on command. 
+*** Light
+**** School
+School evocation [light]; Level bard 0, cleric/oracle 0, druid 0, inquisitor 0, magus 0, sorcerer/wizard 0, summoner 0, witch 0
+**** Casting
+Casting Time 1 standard action
+Components V, M/DF (a firefly)
+**** Effect
+Range touch
+Target object touched
+Duration 10 min./level
+Saving Throw none; Spell Resistance no
+**** Description
+This spell causes a touched object to glow like a torch, shedding normal light in a 20-foot radius from the point touched, and increasing the light level for an additional 20 feet by one step, up to normal light (darkness becomes dim light, and dim light becomes normal light). In an area of normal or bright light, this spell has no effect. The effect is immobile, but it can be cast on a movable object.
+You can only have one light spell active at any one time. If you cast this spell while another casting is still in effect, the previous casting is dispelled. If you make this spell permanent (through permanency or a similar effect), it does not count against this limit. Light can be used to counter or dispel any darkness spell of equal or lower spell level.
+*** Sleeves of Many Garments
+Aura faint illusion; CL 1st
+Slot wrists; Price 200 gp; Weight 1 lb.
+**** Description
+These translucent cloth tubes easily fit over their warer's arms.
+The wearer of these sleeves can, when she slips them on, choose to transform her current garments into any other non-magical set of clothing. These new clothes fit her perfectly and are always clean and mended unless she specifically designates otherwise. When she removes the sleeves, her clothes revert to their original form.
+*** Clamor Box
+Aura moderate illusion; CL 10th
+Slot none; Price 2,000 gp; Weight 2 lbs.
+**** Description
+This delicate music box can produce a great volume of noise at a specific time determined by its owner. Four command words determine what sorts of sounds it is to play (battle, fire, massacre, or riot), and a fifth determines the delay (anywhere from 1 round to 20 minutes) until the box begins to produce the desired sound. The noise from the box is as loud as 40 people. The sound persists for 2d6 rounds.
+*** Speak with Master
+If the master is 5th level or higher, a familiar and the master can communicate verbally as if they were using a common language. Other creatures do not understand the communication without magical help.
+*** Deliver Touch Spells
+If the master is 3rd level or higher, a familiar can deliver touch spells for him. If the master and the familiar are in contact at the time the master casts a touch spell, he can designate his familiar as the "toucher". The familiar can then deliver the touch spell just as the master would. As usual, if the master casts another spell before the touch is delivered, the touch spell dissipates.
+*** Share Spells
+The wizard may cast a spell with a target of "You"  on his familiar (as a touch spell) instead of on himself. A wizard may cast spells on his familiar even if the spells do not normally affect creatures of the familiar's type (magical beast). 
+*** Empathic Link
+The master has an empathic link with his familiar to a 1 mile distance. The master can communicate empathically with the familiar, but cannot see through its eyes. Because of the link's limited nature, only general emotions can be shared. The master has the same connection to an item or place that his familiar does.
+*** Improved Evasion
+Prerequisite: Advanced talents
+Benefit: This works like evasion, except that while the rogue still takes no damage on a successful Reflex saving throw against attacks, she henceforth takes only half damage on a failed save. A helpless rogue does not gain the benefit of improved evasion.
+*** Alertness
+You often notice things that others might miss.
+Benefit: You get a +2 bonus on Perception and Sense Motive skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.
+*** Spell Focus
+Choose a school of magic. Any spells you cast of that school are more difficult to resist.
+Benefit: Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select.
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school of magic.
+*** Persuasive
+You are skilled at swaying attitudes and intimidating others into your way of thinking.
+Benefit: You get a +2 bonus on Diplomacy and Intimidate skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.
+*** Hideous Laughter
+**** School
+School enchantment (compulsion) [mind-affecting]; Level bard 1, sorcerer/wizard 2
+**** Casting
+Casting Time 1 standard action
+Components V, S, M (tiny fruit tarts and a feather)
+**** Effect
+Range close (25 ft. + 5 ft./2 levels)
+Target one creature; see text
+Duration 1 round/level
+Saving Throw Will negates; Spell Resistance yes
+**** Description
+This spell afflicts the subject with uncontrollable laughter. It collapses into gales of manic laughter, falling prone. The subject can take no actions while laughing, but is not considered helpless. After the spell ends, it can act normally. On the creature's next turn, it may attempt a new saving throw to end the effect. This is a full round action that does not provoke attacks of opportunity. If this save is successful, the effect ends. If not, the creature continues laughing for the entire duration.
+A creature with an Intelligence score of 2 or lower is not affected. A creature whose type is different from the caster's receives a +4 bonus on its saving throw, because humor doesn't "translate" well.
+*** Minor Image
+**** School
+School illusion (figment); Level bard 2, magus 2, sorcerer/wizard 2
+**** Effect
+Duration concentration + 2 rounds
+**** Description
+This spell functions like [[Silent Image][Silent Image]], except that minor image includes some minor sounds but not understandable speech.
+*** Sleep
+**** School
+School enchantment (compulsion) [mind-affecting]; Level bard 1, sorcerer/wizard 1, witch 1; Domain Night 1
+**** Casting
+Casting Time 1 round
+Components V, S, M (fine sand, rose petals, or a live cricket)
+**** Effect
+Range medium (100 ft. + 10 ft./level)
+Area one or more living creatures within a 10-ft.-radius burst
+Duration 1 min./level
+Saving Throw Will negates; Spell Resistance yes
+**** Description
+A sleep spell causes a magical slumber to come upon 4 HD of creatures. Creatures with the fewest HD are affected first. Among creatures with equal HD, those who are closest to the spell's point of origin are affected first. HD that are not sufficient to affect a creature are wasted. Sleeping creatures are helpless. Slapping or wounding awakens an affected creature, but normal noise does not. Awakening a creature is a standard action (an application of the aid another action). Sleep does not target unconscious creatures, constructs, or undead creatures.
+*** Invisibility
+**** School
+School illusion (glamer); Level alchemist 2, antipaladin 2, bard 2, inquisitor 2, magus 2, sorcerer/wizard 2, summoner 2; Domain trickery 2; Bloodline arcane 2
+**** Casting
+Casting Time 1 standard action
+Components V, S, M/DF (an eyelash encased in gum arabic)
+**** Effect
+Range personal or touch
+Target you or a creature or object weighing no more than 100 lbs./level
+Duration 1 min./level (D)
+Saving Throw Will negates (harmless) or Will negates (harmless, object); Spell Resistance yes (harmless) or yes (harmless, object)
+**** Description
+The creature or object touched becomes invisible. If the recipient is a creature carrying gear, that vanishes, too. If you cast the spell on someone else, neither you nor your allies can see the subject, unless you can normally see invisible things or you employ magic to do so.
+Items dropped or put down by an invisible creature become visible; items picked up disappear if tucked into the clothing or pouches worn by the creature. Light, however, never becomes invisible, although a source of light can become so (thus, the effect is that of a light with no visible source). Any part of an item that the subject carries but that extends more than 10 feet from it becomes visible.
+Of course, the subject is not magically silenced, and certain other conditions can render the recipient detectable (such as swimming in water or stepping in a puddle). If a check is required, a stationary invisible creature has a +40 bonus on its Stealth checks. This bonus is reduced to +20 if the creature is moving. The spell ends if the subject attacks any creature. For purposes of this spell, an attack includes any spell targeting a foe or whose area or effect includes a foe. Exactly who is a foe depends on the invisible character's perceptions. Actions directed at unattended objects do not break the spell. Causing harm indirectly is not an attack. Thus, an invisible being can open doors, talk, eat, climb stairs, summon monsters and have them attack, cut the ropes holding a rope bridge while enemies are on the bridge, remotely trigger traps, open a portcullis to release attack dogs, and so forth. If the subject attacks directly, however, it immediately becomes visible along with all its gear. Spells such as bless that specifically affect allies but not foes are not attacks for this purpose, even when they include foes in their area.
+Invisibility can be made permanent (on objects only) with a permanency spell.
+*** Haunted Fey Aspect
+**** School
+School illusion (glamer); Level bard 0, sorcerer/wizard 0
+**** Casting
+Casting Time 1 standard action
+Components S
+**** Effect
+Range Personal
+Target You
+Duration 1 round/level (D)
+**** Description
+You surround yourself with disturbing illusions, making you look and sound like a bizarre, insane fey creature. You gain DR 1/cold iron against a single opponent until the end of the spell, or until you take damage.
+*** Entangle
+**** School
+School transmutation; Level druid 1, ranger 1
+**** Casting
+Casting Time 1 standard action
+Components V, S, DF
+**** Effect
+Range long (400 ft. + 40 ft./level)
+Area plants in a 40-ft.-radius spread
+Duration 1 min./level (D)
+Saving Throw Reflex partial; see text; Spell Resistance no
+**** Description
+This spell causes tall grass, weeds, and other plants to wrap around creatures in the area of effect or those that enter the area. Creatures that fail their save gain the entangled condition. Creatures that make their save can move as normal, but those that remain in the area must save again at the end of your turn. Creatures that move into the area must save immediately. Those that fail must end their movement and gain the entangled condition. Entangled creatures can attempt to break free as a move action, making a Strength or Escape Artist check. The DC for this check is equal to the DC of the spell. The entire area of effect is considered difficult terrain while the effect lasts.
+If the plants in the area are covered in thorns, those in the area take 1 point of damage each time they fail a save against the entangle or fail a check made to break free. Other effects, depending on the local plants, might be possible at GM discretion.
+*** Woodland Stride
+At 3rd level, you can move through any sort of undergrowth (such as natural thorns, briars, overgrown areas, and similar terrain) at your normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that have been magically manipulated to impede motion, however, still affect you.
+*** Effortless Trickery
+Your natural knack for illusion allows you to maintain at least one illusion spell with little effort.
+Prerequisite: Gnome.
+Benefit: You can maintain concentration on one spell of the illusion school as a swift action. This has no effect on spells of other schools or on illusion spells with durations that don't depend on your active concentration. While you may only maintain one spell as a swift action, you may take your move and standard actions to maintain other spells normally, if you wish.
+Normal: Concentrating to maintain a spell is a standard action that does not provoke attacks of opportunity.
+*** Mage Hand
+**** School
+School transmutation; Level bard 0, magus 0, sorcerer/wizard 0, summoner 0
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range close (25 ft. + 5 ft./2 levels)
+Target one non-magical, unattended object weighing up to 5 lbs.
+Duration concentration
+Saving Throw none; Spell Resistance no
+**** Description
+You point your finger at an object and can lift it and move it at will from a distance. As a move action, you can propel the object as far as 15 feet in any direction, though the spell ends if the distance between you and the object ever exceeds the spell's range.
+*** Detect Magic
+**** School
+School divination; Level bard 0, cleric/oracle 0, druid 0, inquisitor 0, magus 0, sorcerer/wizard 0, summoner 0, witch 0
+**** Casting
+Casting Time 1 standard action
+Component: V, S
+**** Effect
+Range 60 ft.
+Area cone-shaped emanation
+Duration concentration, up to 1 min./level (D)
+Saving Throw none; Spell Resistance no 
+**** Description
+You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject.
+1st Round: Presence or absence of magical auras.
+2nd Round: Number of different magical auras and the power of the most potent aura.
+3rd Round: The strength and location of each aura. If the items or creatures bearing the auras are in line of sight, you can make Knowledge (arcana) skill checks to determine the school of magic involved in each. (Make one check per aura: DC 15 + spell level, or 15 + 1/2 caster level for a nonspell effect.) If the aura emanates from a magic item, you can attempt to identify its properties (see Spellcraft).
+Magical areas, multiple types of magic, or strong local magical emanations may distort or conceal weaker auras.
+Aura Strength: An aura's power depends on a spell's functioning spell level or an item's caster level; see the accompanying table. If an aura falls into more than one category, detect magic indicates the stronger of the two.
+| Spell or Object                 | Faint        | Moderate | Strong    | Overwhelming        |
+|---------------------------------+--------------+----------+-----------+---------------------|
+| Functioning spell (spell level) | 3rd or lower | 4th-6th  | 7th-9th   | 10th+ (deity-level) |
+| Magic item (caster level)       | 5th or lower | 6th-11th | 12th-20th | 21st+ (artifact)    |
+
+Lingering Aura: A magical aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a magic item). If detect magic is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:
+| Original Strength | Duration of Lingering Aura |
+|-------------------+----------------------------|
+| Faint             | 1d6 rounds                 |
+| Moderate          | 1d6 minutes                |
+| Strong            | 1d6x10 minutes             |
+| Overwhelming      | 1d6 days                   |
+Outsiders and elementals are not magical in themselves, but if they are summoned, the conjuration spell registers. Each round, you can turn to detect magic in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.
+Detect magic can be made permanent with a permanency spell.
+*** Read Magic
+**** School
+School divination; Level antipaladin 1, bard 0, cleric/oracle 0, druid 0, inquisitor 0, magus 0, paladin 1, ranger 1, sorcerer/wizard 0, summoner 0, witch 0
+**** Casting
+Casting Time 1 standard action
+Components V, S, F (a clear crystal or mineral prism)
+**** Effect
+Range personal
+Target you
+Duration 10 min./level
+**** Description
+You can decipher magical inscriptions on objects - books, scrolls, weapons, and the like - that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed or trapped scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of read magic. You can read at the rate of one page (250 words) per minute. The spell allows you to identify a glyph of warding with a DC 13 Spellcraft check, a greater glyph of warding with a DC 16 Spellcraft check, or any symbol spell with a Spellcraft check (DC 10 + spell level).
+Read magic can be made permanent with a permanency spell.
+*** Color Spray
+**** School
+School illusion (pattern) [mind-affecting]; Level bloodrager 1, magus 1, sorcerer/wizard 1
+**** Casting
+Casting Time 1 standard action
+Components V, S, M (red, yellow, and blue powder or colored sand)
+**** Effect
+Range 15 ft.
+Area cone-shaped burst
+Duration instantaneous; see text
+Saving Throw Will negates; Spell Resistance yes
+**** Description
+A vivid cone of clashing colors springs forth from your hand, causing creatures to become stunned, perhaps also blinded, and possibly knocking them unconscious. Each creature within the cone is affected according to its HD.
+2 HD or less: The creature is unconscious, blinded, and stunned for 2d4 rounds, then blinded and stunned for 1d4 rounds, and then stunned for 1 round. (Only living creatures are knocked unconscious.)
+3 or 4 HD: The creature is blinded and stunned for 1d4 rounds, then stunned for 1 round.
+5 or more HD: The creature is stunned for 1 round.
+Sightless creatures are not affected by color spray.
+*** Silent Image
+**** School
+School illusion (figment); Level bard 1, magus 1, sorcerer/wizard 1
+**** Casting
+Casting Time 1 standard action
+Components V, S, F (a bit of fleece)
+**** Effect
+Range long (400 ft. + 40 ft./level)
+Effect visual figment that cannot extend beyond four 10-ft. cubes + one 10-ft. cube/level (S)
+Duration concentration
+Saving Throw Will disbelief (if interacted with); Spell Resistance no
+**** Description
+This spell creates the visual illusion of an object, creature, or force, as visualized by you. The illusion does not create sound, smell, texture, or temperature. You can move the image within the limits of the size of the effect.
+*** Bloodline Tattoos
+Whenever a tattooed sorcerer gains a bloodline spell, a new tattoo manifests on her body to represent this spell. Her bloodline spells are always enhanced by her Mage's Tattoo feat, even if they don't match the school to which her Mage's Tattoo belongs.
+*** Bloodline Arcana
+Whenever you cast a spell of the compulsion subschool, increase the spell's DC by +2.
+*** Mage's Tattoo
+Benefit: Select a school of magic (other than divination) in which you have Spell Focus you cast spells from this school at +1 caster level. Additionally, you gain a single spell-like ability usable up to three times per day. The spell-like ability gained are as follows:
+    Abjuration: resistance
+    Conjuration: acid splash
+    Enchantment: daze
+    Evocation: dancing lights
+    Illusion: ghost sound
+    Necromancy: touch of fatigue
+    Transmutation: mage hand
+*** Mage's Tattoo - Ex
+At 1st level, the tattooed sorcerer gains [[Mage's Tattoo]] as a bonus feat. If she doesn't have Spell Focus, she may choose which school of magic her Mage's Tattoo enhances.
+This ability replaces her Eschew Materials bonus feat.
+*** Familiar Tattoo
+A tattooed sorcerer gains a familiar as an arcane bond, as a wizard equal to her sorcerer level. Her sorcerer levels stack with any wizard or witch levels she possesses when determining the powers of her familiar this ability does not allow her to have both a familiar and a bonded item.
+Unlike most familiars, her familiar can transform itself into a tattoo that she carries in her flesh. Transforming into a tattoo or back to normal familiar form is a move action for her familiar. In tattoo form, the familiar looks like a stylized version of itself, but does not count as a creature separate from the tattooed sorcerer. In tattoo form it continues to grant its special familiar ability, but otherwise has no abilities and can take no actions except to transform from tattoo into creature. A familiar tattoo cannot be erased or dispelled.
+This ability replaces her 1st-level bloodline power.
+*** Animal Friend
+You've long been a friend to animals, and feel safer when animals are nearby.
+Benefits: You gain a +1 trait bonus on Will saving throws as long as an animal (Tiny or larger, must be at least indifferent toward you) is within 30 feet, and Handle Animal is always a class skill for you.
+*** Reactionary
+You were bullied often as a child, but never quite developed an offensive response. Instead, you became adept at anticipating sudden attacks and reacting to danger quickly.
+Benefit: You gain a +2 trait bonus on initiative checks.
+*** Gift of Tongues
+Gnomes love languages and learning about those they meet. Gnomes with this racial trait gain a +1 bonus on Bluff and Diplomacy checks, and they learn one additional language every time they put a rank in the Linguistics skill. This racial trait replaces defensive training and hatred.
+*** Low-Light Vision
+Gnomes can see twice as far as humans in conditions of dim light.
+*** Gnome Weapon Familiarity
+Gnomes treat any weapon with the word "gnome" in its name as a martial weapon. 
+*** Dancing Lights 
+**** School
+School evocation [light]; Level bard 0, magus 0, sorcerer/wizard 0, witch 0
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range medium (100 ft. + 10 ft./level)
+Effect Up to four lights, all within a 10-ft.-radius area
+Duration 1 minute (D)
+Saving Throw none; Spell Resistance no
+**** Description
+Depending on the version selected, you create up to four lights that resemble lanterns or torches (and cast that amount of light), or up to four glowing spheres of light (which look like will-o'-wisps), or one faintly glowing, vaguely humanoid shape. The dancing lights must stay within a 10-foot-radius area in relation to each other but otherwise move as you desire (no concentration required): forward or back, up or down, straight or turning corners, or the like. The lights can move up to 100 feet per round. A light winks out if the distance between you and it exceeds the spell's range.
+You can only have one dancing lights spell active at any one time. If you cast this spell while another casting is still in effect, the previous casting is dispelled. If you make this spell permanent, it does not count against this limit.
+Dancing lights can be made permanent with a permanency spell.
+*** Ghost Sound
+**** School
+School illusion (figment); Level bard 0, magus 0, sorcerer/wizard 0
+**** Casting
+Casting Time 1 standard action
+Components V, S, M (a bit of wool or a small lump of wax)
+**** Effect
+Range close (25 ft. + 5 ft./2 levels)
+Effect illusory sounds
+Duration 1 round/level (D)
+Saving Throw Will disbelief; Spell Resistance no
+**** Description
+Ghost sound allows you to create a volume of sound that rises, recedes, approaches, or remains at a fixed place. You choose what type of sound ghost sound creates when casting it and cannot thereafter change the sound's basic character.
+The volume of sound created depends on your level. You can produce as much noise as four normal humans per caster level (maximum 40 humans). Thus, talking, singing, shouting, walking, marching, or running sounds can be created. The noise a ghost sound spell produces can be virtually any type of sound within the volume limit. A horde of rats running and squeaking is about the same volume as eight humans running and shouting. A roaring lion is equal to the noise from 16 humans, while a roaring dragon is equal to the noise from 32 humans. Anyone who hears a ghost sound receives a Will save to disbelieve.
+Ghost sound can enhance the effectiveness of a silent image spell.
+Ghost sound can be made permanent with a permanency spell.
+*** Prestidigitation
+**** School
+School universal; Level bard 0, magus 0, sorcerer/wizard 0
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range 10 ft.
+Target, Effect, or Area see text
+Duration 1 hour
+Saving Throw see text; Spell Resistance no
+**** Description
+Prestidigitations are minor tricks that novice spellcasters use for practice. Once cast, a prestidigitation spell enables you to perform simple magical effects for 1 hour. The effects are minor and have severe limitations. A prestidigitation can slowly lift 1 pound of material. It can color, clean, or soil items in a 1-foot cube each round. It can chill, warm, or flavor 1 pound of nonliving material. It cannot deal damage or affect the concentration of spellcasters. Prestidigitation can create small objects, but they look crude and artificial. The materials created by a prestidigitation spell are extremely fragile, and they cannot be used as tools, weapons, or spell components. Finally, prestidigitation lacks the power to duplicate any other spell effects. Any actual change to an object (beyond just moving, cleaning, or soiling it) persists only 1 hour.
+*** Speak With Animals
+**** School
+School divination; Level bard 3, druid 1, ranger 1
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range personal
+Target you
+Duration 1 min./level
+**** Description
+You can ask questions of and receive answers from animals, but the spell doesn't make them any more friendly than normal. Wary and cunning animals are likely to be terse and evasive, while the more stupid ones make inane comments. If an animal is friendly toward you, it may do some favor or service for you.
+*** Illusion Resistance
+Gnomes gain a +2 racial saving throw bonus against illusion spells and effects.
+*** Keen Senses
+Gnomes receive a +2 racial bonus on Perception checks.
+*** Academician
+Some gnomes are more academically inclined than their kin. Gnomes with this racial trait gain a +2 bonus on any single Knowledge skill. This racial trait replaces the obsessive racial trait.
+*** Gnome Magic
+Gnomes add +1 to the DC of any saving throws against illusion spells that they cast. Gnomes with Charisma scores of 11 or higher also gain the following spell-like abilities: 1/day - dancing lights, ghost sound, prestigitation, and speak with animals. The caster level for these effects is equal to the gnome's level. The DC for these speels is equal to 10 + the spell's level + the gnome's Charisma modifier.
+*** Groundling
+You can speak with burrowing animals.
+Prerequisites: Cha 13, gnome, gnome magic racial trait.
+Benefit: You can use speak with animals as a spell-like ability at will, but only to communicate with burrowing animals like gophers, moles, and the like. You can still use your gnome speak with animals ability once per day to speak with any animal, as usual.
+*** Disguise Self
+**** School
+School illusion (glamer); Level alchemist 1, antipaladin 1, bard 1, inquisitor 1, sorcerer/wizard 1; Domain trickery 1
+**** Casting
+Casting Time 1 standard action
+Components V, S
+**** Effect
+Range personal
+Target you
+Duration 10 min./level (D)
+**** Description
+You make yourself - including clothing, armor, weapons, and equipment - look different. You can seem 1 foot shorter or taller, thin, fat, or in between. You cannot change your creature type (although you can appear as another subtype). Otherwise, the extent of the apparent change is up to you. You could add or obscure a minor feature or look like an entirely different person or gender.
+The spell does not provide the abilities or mannerisms of the chosen form, nor does it alter the perceived tactile (touch) or audible (sound) properties of you or your equipment. If you use this spell to create a disguise, you get a +10 bonus on the Disguise check. A creature that interacts with the glamer gets a Will save to recognize it as an illusion.
+*** Eschew Materials
+You can cast many spells without needing to utilize minor material components.
+Benefit: You can cast any spell with a material component costing 1 gp or less without needing that component. The casting of the spell still provokes attacks of opportunity as normal. If the spell requires a material component that costs more than 1 gp, you must have the material component on hand to cast the spell, as normal.
+*** Giant Rabbit
+N Small animal
+Init +3; Senses low-light vision; Perception +1
+DEFENSE
+AC 14, touch 14, flat-footed 11 (+3 Dex, +1 size)
+hp 4 (1d8)
+Fort +1, Ref +5, Will +1
+OFFENSE
+Speed 40 ft.
+Melee bite -1 (1d4)
+STATISTICS
+Str 3, Dex 16, Con 9, Int 2, Wis 12, Cha 5
+Base Atk +0; CMB +1; CMD 7 (11 vs. trip)
+Feats Run
+Skills Stealth +7; Racial Modifiers +10 Acrobatics when jumping
+(?)Familar Bonus +2 Diplomacy(?)
+** Plan
+*** Trait / Feat Plan
+**** Past Levels
+***** TODO Level 1
+****** DONE General Feat - Groundling 
+****** TODO Gnome 
+******* DONE Illusion Resistance
+******* DONE Keen Senses
+******* DONE Academician
+******* TODO Gnome Magic ( still have to add DC effect
+******* DONE Weapon Familiarity
+******* DONE Low-Light Vision
+******* DONE Gift of Tongues
+****** DONE Traits
+******* DONE Reactionary
+******* DONE Animal Friend
+****** TODO Anti Hero - Spell Focus
+****** DONE Sourceror 
+******* DONE Bloodline Arcana
+******* DONE Bloodline Power - Familar
+******* DONE Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   4 |   2 |     |     |     |     |     |     |     |     |
+| New   |   4 |   2 |     |     |     |     |     |     |     |     |
+******** DONE Color Spray (1st)
+******** DONE Silent Image (1st)
+******** DONE Detect Magic (0th)
+******** DONE Read magic (0th)
+******** DONE Mage Hand (0th)
+******** DONE Ghost Sound (0th)
+***** DONE Level 2
+****** DONE Sorceror
+******* DONE Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   5 |   2 |     |     |     |     |     |     |     |     |
+| New   |   1 |     |     |     |     |     |     |     |     |     |
+******** DONE Prestidigitation (0th)
+***** DONE Level 3
+****** DONE General Feat - Effortless Trickery
+****** DONE Sorceror
+******* DONE Bloodline Power - Woodland Stride
+******* DONE Bloodline Spell - Entangle
+******* DONE Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |   |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+---|
+| Known |   5 |   3 |     |     |     |     |     |     |     |     |   |
+| New   |     |   1 |     |     |     |     |     |     |     |     |   |
+******** DONE Disguise Self (1st)
+***** DONE Level 4
+****** DONE Ability Score Bump :: Charisma
+****** DONE Sorceror
+******* DONE Spelsl
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   6 |   3 |   1 |     |     |     |     |     |     |     |
+| New   |   1 |     | 1   |     |     |     |     |     |     |     |
+******** DONE Haunted Fey Aspect (0th)
+******** DONE Invisibility (2nd)
+***** TODO Level 5
+****** TODO General Feat - Persuasive
+****** DONE Sorceror
+******* DONE Bloodline Spell - Hideous Laughter
+******* DONE Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   6 |   4 |   2 |     |     |     |     |     |     |     |
+| New   |     |   1 |   1 |     |     |     |     |     |     |     |
+******** DONE Sleep (1st)
+******** DONE Minor Image (2nd)
+**** Future Levels
+***** Level 6
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   7 |   4 |   2 |   1 |     |     |     |     |     |     |
+| New   |   1 |     |     | 1   |     |     |     |     |     |     |
+***** Level 7
+****** General Feat - Leadership
+****** Sorceror
+******* Create Spell Tattoo
+******* Bloodline Spell - Deep Slumber
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   7 |   5 |   3 |   2 |     |     |     |     |     |     |
+| New   |     |   1 |   1 | 1   |     |     |     |     |     |     |
+***** Level 8
+****** Ability Score Bump
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   8 |   5 |   3 |   2 |   1 |     |     |     |     |     |
+| New   |   1 |   0 |   0 |   0 | 1   |     |     |     |     |     |
+***** Level 9
+****** General Feat - Rehtorical Flourish
+****** Sorceror
+******* Enhanced Magical Tattoo
+******* Bloodline Spell - Poison
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   8 |   5 |   4 |   3 |   2 |     |     |     |     |     |
+| New   |     |     |   1 |   1 | 1   |     |     |     |     |     |
+***** Level 10
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   4 |   3 |   2 |   1 |     |     |     |     |
+| New   |   1 |     |     |     |     | 1   |     |     |     |     |
+***** Level 11
+****** General Feat
+****** Sorceror
+******* Bloodline Spell - Tree Stride
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   3 |   2 |     |     |     |     |
+| New   |     |     |   1 |   1 |   1 |   1 |     |     |     |     |
+***** Level 12
+****** Ability Score Bump
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   3 |   2 |   1 |     |     |     |
+| New   |     |     |     |     |     |     | 1   |     |     |     |
+***** Level 13
+****** General Feat
+****** Sorceror
+******* TODO Bloodline Feat
+******* Bloodline Spell - Mislead
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   3 |   2 |     |     |     |
+| New   |     |     |     |     |   1 |   1 | 1   |     |     |     |
+***** Level 14
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   3 |   2 |   1 |     |     |
+| New   |     |     |     |     |     |     |     | 1   |     |     |
+***** Level 15
+****** General Feat
+****** Sorceror
+******* Bloodline Power - Fey Magic
+******* Bloodline Spell - Phase Door
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   4 |   3 |   2 |     |     |
+| New   |     |     |     |     |     |   1 |   1 |   1 |     |     |
+***** Level 16
+****** Ability Score Bump
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   4 |   3 |   2 |   1 |     |
+| New   |     |     |     |     |     |     |     |     | 1   |     |
+***** Level 17
+****** General Feat
+****** Sorceror
+******* Bloodline Spell - Irresistible Dance
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   4 |   3 |   3 |   2 |     |
+| New   |     |     |     |     |     |     |     |   1 | 1   |     |
+***** Level 18
+****** Sorceror
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   4 |   3 |   3 |   2 |   1 |
+| New   |     |     |     |     |     |     |     |     |   1 | 1   |
+***** Level 19
+****** General Feat
+****** Sorceror
+******* TODO Bloodline Feat
+******* Bloodline Spell - Shape Change
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   4 |   3 |   3 |   3 |   2 |
+| New   |     |     |     |     |     |     |     |     |   1 | 1   |
+***** Level 20
+****** Ability Score Bump
+****** Sorceror
+******* Bloodline Power - Soule of the Fey
+******* Spells
+| Slot  | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+|-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Known |   9 |   5 |   5 |   4 |   4 |   4 |   3 |   3 |   3 |   3 |
+| New   |     |     |     |     |     |     |     |     |     | 1   |
+Characters
+
+
